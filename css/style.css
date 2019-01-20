@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  z-index: 10000;
+}
+
+.jumbotron {
+  height: 100vh;
+  min-height: 350px;
+  background-image: url('../img/background.jpg');
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.jumbotron .container h1 {
+  margin-top: 30vh;
+}
+
+
+.blog h2, .category h2, .about h2 {
+  padding: 20px 0 10px 0;
+}
+
+.blog button, .category button, .about button {
+  margin-top: 20px;
+  border-radius: 25px;
+  box-shadow: rgba(159, 167, 194, 0.6) 0px 1px 1px 0px;
+}
+
+.blog .container .row ul {
+  margin-left: 15px;
+}
+
+.category {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background-image: url('../img/background.jpg');
+  background-attachment: fixed;
+}
+
+.about {
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #0f0f0f;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 700px) {
+
+  .category .row .col-sm-3 {
+    margin-bottom: 10px;
+  }
+
+  footer .container .row .col-sm-6, footer .container .row .col-sm-3 {
+    margin-bottom: 20px;
+  }
+
+}
