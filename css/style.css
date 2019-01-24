@@ -14,8 +14,28 @@ header {
   padding: 5px 50px;
 }
 
-.nav-link {
+.nav-link, .navbar-brand {
   outline: none;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: salmon;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid salmon;
+  transition: 0.4s;
+}
+
+a:hover:after {
+  width: 100%;
 }
 
 .jumbotron {

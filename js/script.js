@@ -1,5 +1,6 @@
-var sc = $.noConflict(); // scroll animation
+var sc = $.noConflict(); 
 
+// scroll animation
 sc(document).ready(function() {
   sc(".page-scroll").click(function(e) {
     var tujuan = sc(this).attr("href");
@@ -7,12 +8,13 @@ sc(document).ready(function() {
     var elemenTujuan = sc(tujuan);
 
     sc("#home").animate({
-        scrollTop: elemenTujuan.offset().top - 60
+        scrollTop: elemenTujuan.offset().top - 50
       }, 1250, "swing");
 
     e.preventDefault();
   });
 
+  // change navbar
   sc(window).scroll(function() {
     var y = sc(this).scrollTop();
 
@@ -27,4 +29,5 @@ sc(document).ready(function() {
       });
     }
   });
+
 });
