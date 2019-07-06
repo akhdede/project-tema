@@ -41,7 +41,7 @@ a:hover:after {
 .jumbotron {
   height: 100vh;
   min-height: 350px;
-  background-image: url('../img/background.jpg');
+  background-image: url('../img/background.png');
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
